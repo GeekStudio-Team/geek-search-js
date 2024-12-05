@@ -1,15 +1,17 @@
 {
   "name": "geek-search-js",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
+  "version": "1.0.0",
+  "description": "A JavaScript library for search functionality",
+  "main": "dist/geek-search.umd.js",   
+  "module": "dist/geek-search.es.js", 
   "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
-    "preview": "vite preview"
+    "build": "vite build"
   },
-  "devDependencies": {
-    "typescript": "~5.6.2",
-    "vite": "^6.0.2"
-  }
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/GeekStudio-Team/geek-search-js.git"
+  },
+  "keywords": ["jsdelivr", "library", "search"],
+  "author": "GeekStudio",
+  "license": "MIT"
 }

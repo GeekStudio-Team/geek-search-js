@@ -5,7 +5,7 @@ async function n(t, e) {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        Autorization: `Bearer ${t}`
+        Authorization: `Bearer ${t}`
       }
     }, o = await fetch(a, r);
     if (!o.ok)
