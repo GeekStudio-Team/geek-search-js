@@ -5,7 +5,7 @@ export async function setRankingKeyword(appToken, keyword) {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
-                Autorization: `Bearer ${appToken}`,
+                Authorization: `Bearer ${appToken}`,
             },
         };
         const response = await fetch(url, options);

@@ -1,13 +1,21 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + TS</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.ts"></script>
-  </body>
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" type="image/svg+xml" href="/vite.svg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Vite + TS</title>
+	</head>
+	<body>
+		<div id="app"></div>
+		<script src="https://cdn.jsdelivr.net/gh/GeekStudio-Team/geek-search-js@main/dist/geek-search-theborn.umd.js"></script>
+		<script>
+			GeekSearch.setRankingKeyword(
+				"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwYXJ0bmVyU25vIjozMywibWFuYWdlclR5cGUiOiJwYXJ0bmVyIiwiaWF0IjoxNzE5OTkyMzEzLCJleHAiOjEwMzU5OTkyMzEzfQ.1iEFge68PJ7oQGBiMtXq8d6URic_SOB4r0BvYASeVro",
+				"test-keyword"
+			)
+				.then(() => console.log("Keyword set successfully!"))
+				.catch((error) => console.error(error));
+		</script>
+	</body>
 </html>
