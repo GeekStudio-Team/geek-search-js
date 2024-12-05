@@ -5,7 +5,7 @@ export async function setRankingKeyword(appToken: string, keyword: string) {
 			method: "POST",
 			headers: {
 				"Content-Type": "application/json",
-				Autorization: `Bearer ${appToken}`,
+				Authorization: `Bearer ${appToken}`,
 			},
 		};
 
