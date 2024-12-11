@@ -1,6 +1,6 @@
 export async function setRankingKeyword(appToken: string, keyword: string) {
 	try {
-		var url = `http://alpha.thebornmall.com/app/search-ranking?keyword=${keyword}`;
+		var url = `https://live.tbgeekstudio.co.kr/app/search-ranking?keyword=${keyword}`;
 		const options = {
 			method: "POST",
 			headers: {
