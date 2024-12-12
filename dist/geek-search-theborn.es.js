@@ -1,19 +1,19 @@
-async function n(t, e) {
+async function s(e, o) {
   try {
-    var a = `http://alpha.thebornmall.com/app/search-ranking?keyword=${e}`;
+    var n = `https://live.tbgeekstudio.co.kr/app/search-ranking?keyword=${o}`;
     const r = {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        Authorization: `Bearer ${t}`
+        Authorization: `Bearer ${e}`
       }
-    }, o = await fetch(a, r);
-    if (!o.ok)
-      throw new Error(`HTTP error! status: ${o.status}`);
+    }, t = await fetch(n, r);
+    if (!t.ok)
+      throw new Error(`HTTP error! status: ${t.status}`);
   } catch (r) {
     throw console.error("API request failed:", r), r;
   }
 }
 export {
-  n as setRankingKeyword
+  s as setRankingKeyword
 };
